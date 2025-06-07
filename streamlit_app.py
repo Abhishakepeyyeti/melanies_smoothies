@@ -53,7 +53,7 @@ if ingredients_list:
         st.subheader(fruit_chosen + 'Nutrition Information')
         fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_chosen)
         
-      search_on=pd.df[pd_df['fruit_chosen'] == fruit_chosen, 'SEARCH_ON'].iloc[0]
+      # search_on=pd.df[pd_df['fruit_chosen'] == fruit_chosen, 'SEARCH_ON'].iloc[0]
 
 
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients,name_on_order)
